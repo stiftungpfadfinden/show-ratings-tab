@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<extension key="de.civiservice.show-ratings-tab" type="module">
+  <file>show_ratings_tab</file>
+  <name>de.civiservice.show-ratings-tab</name>
+  <description>Hinterlegt in der Fallansicht einen Link auf das Afform unter 'civicrm/bewertungen-anzeigen'</description>
+  <license>AGPL-3.0</license>
+  <maintainer>
+    <author>civiservice.de GmbH</author>
+    <email>support@civiservice.de</email>
+  </maintainer>
+  <urls>
+    <url desc="Main Extension Page">https://gitlab.digitalcourage.de/civiservice/stiftung-pfadfinden/de.civiservice.show-ratings-tab</url>
+    <url desc="Documentation">https://gitlab.digitalcourage.de/civiservice/stiftung-pfadfinden/de.civiservice.show-ratings-tab</url>
+    <url desc="Support">https://civiservice.de</url>
+    <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
+  </urls>
+  <releaseDate>2023-09-19</releaseDate>
+  <version>1.0</version>
+  <develStage>stable</develStage>
+  <compatibility>
+    <ver>5.68.1</ver>
+  </compatibility>
+  <classloader>
+    <psr0 prefix="CRM_" path="."/>
+    <psr4 prefix="Civi\" path="Civi"/>
+  </classloader>
+  <civix>
+    <namespace>CRM/ShowRatingsTab</namespace>
+    <format>22.10.0</format>
+    <angularModule>crmShowRatingsTab</angularModule>
+  </civix>
+  <mixins>
+    <mixin>mgd-php@1.0.0</mixin>
+    <mixin>setting-php@1.0.0</mixin>
+  </mixins>
+</extension>
